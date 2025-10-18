@@ -10,15 +10,32 @@
 <body class="p-4">
   <div class="container">
     <h1 class="mb-4">Series de TV</h1>
-    <table class="table table-striped table-bordered">
-      <thead class="thead-dark">
-        <tr><th>id</th><th>name</th><th>channel</th><th>seasons</th></tr>
-      </thead>
-      <tbody id="series-body"></tbody>
-    </table>
-    <p id="avg-seasons" class="font-weight-bold"></p>
+
+    <div class="row">
+    
+      <div class="col-md-8">
+        <table class="table table-striped table-hover table-bordered">
+          <thead class="thead-dark">
+            <tr>
+              <th>id</th>
+              <th>name</th>
+              <th>channel</th>
+              <th>seasons</th>
+            </tr>
+          </thead>
+          <tbody id="series-body"></tbody>
+        </table>
+        <p id="avg-seasons" class="font-weight-bold"></p>
+      </div>
+
+      
+      <div class="col-md-4">
+        <div id="series-detail"></div>
+      </div>
+    </div>
   </div>
 
   <script type="module" src="./main.js"></script>
 </body>
+
 </html>
